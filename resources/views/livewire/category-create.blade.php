@@ -5,10 +5,11 @@
       </x-slot>
       <x-slot name="content">
         <form>
+        <input type="hidden"wire:model="category.id">
         <div class="flex justify-between mx-2 mb-6">
           <div class="mb-2 md:mr-2 md:mb-0 w-full">
             <x-jet-label value="Nombre categoría" class="font-bold"/>
-            <x-jet-input type="text" wire:model.defer="category.name" class="w-full"/>
+            <x-jet-input type="text" wire:model="category.name" class="w-full"/>
             <x-jet-input-error for="category.name"/>
           </div>
         </div>
